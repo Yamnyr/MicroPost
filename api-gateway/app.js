@@ -20,7 +20,7 @@ app.use('/api/posts', createProxyMiddleware({
     target: 'http://localhost:5000',
     changeOrigin: true,
     pathRewrite: {
-        '^/api/products': '/posts',
+        '^/api/posts': '/posts',
     },
 }));
 

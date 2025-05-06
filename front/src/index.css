@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+:root {
+  /* Palette originale améliorée */
+  --imperial-red: #E63946; /* Rouge plus vif et moderne */
+  --whales-tale: #1D3557; /* Bleu plus profond et riche */
+  --kuroi-black: #0F1729; /* Noir plus profond avec une touche de bleu */
+  --light: #F8F9FA; /* Blanc légèrement cassé pour moins d'agressivité */
+  --light-gray: #E9ECEF; /* Gris clair plus doux */
+  --gray: #6C757D; /* Gris moyen plus neutre */
+
+  /* Couleurs complémentaires */
+  --accent-teal: #457B9D; /* Bleu-vert pour accent */
+  --accent-cream: #F1FAEE; /* Crème subtil pour contrastes doux */
+  --dark-accent: #293241; /* Variante plus claire du noir principal */
+}
+
+body {
+  background-color: var(--kuroi-black);
+  color: var(--light);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+}
+
+/* Couleurs de base */
+.bg-primary {
+  background-color: var(--imperial-red);
+}
+
+.bg-secondary {
+  background-color: var(--whales-tale);
+}
+
+.bg-dark {
+  background-color: var(--kuroi-black);
+}
+
+.bg-light {
+  background-color: var(--light);
+}
+
+.bg-light-gray {
+  background-color: var(--light-gray);
+}
+
+/* Nouvelles couleurs d'accent */
+.bg-accent-teal {
+  background-color: var(--accent-teal);
+}
+
+.bg-accent-cream {
+  background-color: var(--accent-cream);
+}
+
+.bg-dark-accent {
+  background-color: var(--dark-accent);
+}
+
+/* Textes */
+.text-primary {
+  color: var(--imperial-red);
+}
+
+.text-secondary {
+  color: var(--whales-tale);
+}
+
+.text-dark {
+  color: var(--kuroi-black);
+}
+
+.text-light {
+  color: var(--light);
+}
+
+.text-gray {
+  color: var(--gray);
+}
+
+.text-accent-teal {
+  color: var(--accent-teal);
+}
+
+.text-accent-cream {
+  color: var(--accent-cream);
+}
+
+/* Bordures */
+.border-primary {
+  border-color: var(--imperial-red);
+}
+
+.border-secondary {
+  border-color: var(--whales-tale);
+}
+
+.border-accent-teal {
+  border-color: var(--accent-teal);
+}
+
+/* Animations */
+.hover-scale {
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(15, 23, 41, 0.12);
+}
+
+/* Transitions de couleur */
+.hover-color-shift {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Scrollbar personnalisée */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: var(--dark-accent);
+  border-radius: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: var(--imperial-red);
+  border-radius: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent-teal);
+}
+
+/* Custom shadows */
+.shadow-custom {
+  box-shadow: 0 8px 16px rgba(15, 23, 41, 0.12);
+}
+
+.shadow-secondary {
+  box-shadow: 0 6px 14px rgba(29, 53, 87, 0.15);
+}
+
+.shadow-primary {
+  box-shadow: 0 6px 14px rgba(230, 57, 70, 0.15);
+}
+
+/* Dégradés modernes */
+.gradient-primary {
+  background: linear-gradient(135deg, var(--imperial-red), #F27059);
+}
+
+.gradient-secondary {
+  background: linear-gradient(135deg, var(--whales-tale), var(--accent-teal));
+}
+
+.gradient-dark {
+  background: linear-gradient(135deg, var(--kuroi-black), var(--dark-accent));
+}
+
+/* Glassmorphism pour un design moderne */
+.glass-card {
+  background: rgba(29, 53, 87, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-card-light {
+  background: rgba(248, 249, 250, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
